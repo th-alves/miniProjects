@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+Buhid:regular);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Buhid", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #6366f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  background-color: #f0f8ff;
+  width: 600px;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.tab-btn {
+  width: 100%;
+  border: none;
+  color: #020617;
+  background: transparent;
+  border-radius: 8px 8px 0 0;
+  font-weight: 500;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.7s ease;
+}
+
+.tab-btn.active {
+  background: #c7d2fe;
+}
+
+.tab-btn:hover {
+  background-color: #a5b4fc;
+}
+
+.content {
+  display: none;
+}
+
+.content.show {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #c7d2fe;
+  border-radius: 0 0 8px 8px;
+  padding: 1rem;
+}
+
+.content-img {
+  width: 50%;
+  height: 250px;
+}
+
+/* Accordion */
+.accordionConteiner {
+  flex-direction: column;
+}
+
+.accordion {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.accordion-header {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.accordion-header span {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.accordion-body {
+  color: #444;
+  font-size: 14px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.7s ease;
+}
+
+.accordion-body.active {
+  padding: 5px 0;
+  height: 100%;
+  opacity: 1;
+}
+
+.arrow {
+  transition: transform 0.7s ease;
+}
+
+.accordion:has(.active) .arrow {
+  transform: rotate(180deg);
+}
