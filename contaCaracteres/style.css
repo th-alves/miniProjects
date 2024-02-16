@@ -57,3 +57,13 @@ textarea {
 #toggle:hover {
   background-color: #356bc2;
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    text-align: center;
+  }
+  textarea {
+    width: 70%;
+    margin: auto;
+  }
+}
