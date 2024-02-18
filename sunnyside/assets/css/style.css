@@ -351,3 +351,98 @@ footer .social-media {
   --Soft-orange: hsl(29, 99%, 70%);
   background: var(--Soft-orange);
 }
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  main .container .cta p {
+    width: 100%;
+  }
+  main .container .orange .cta,
+  main .container .cherry .cta {
+    top: 30%;
+  }
+
+  main .container .orange .cta h3,
+  main .container .cherry .cta h3 {
+    font-size: 2rem;
+  }
+
+  aside .testimonial-client .testimonial q {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main .container .orange,
+  main .container .cherry {
+    display: none;
+  }
+
+  main .container .cta h3 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  main .container .cta {
+    padding: 3rem;
+  }
+
+  main .container .cta,
+  main .container .cta h3 {
+    align-items: center;
+    text-align: center;
+  }
+
+  main .container .cta h3 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  main .container .cta a::after {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  main .container {
+    grid-template-columns: 1fr;
+  }
+
+  main .container .image-egg {
+    order: 0;
+  }
+  main .container .image-cup {
+    order: 2;
+  }
+  main .container .cherry {
+    order: 4;
+  }
+  main .container .orange {
+    order: 5;
+  }
+
+  main .container .egg {
+    order: 1;
+  }
+  main .container .cup {
+    order: 3;
+  }
+
+  aside .testimonial-client {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .other-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .attribution {
+    left: 20%;
+  }
+}
