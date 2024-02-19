@@ -1,3 +1,10 @@
+function openMenu() {
+  let nav = document.querySelector(".menu");
+
+  document.querySelectorAll(".hide");
+  nav.classList.toggle("open").classList.add(".hide");
+}
+
 ScrollReveal().reveal("#title", {
   origin: "top",
   duration: 2000,

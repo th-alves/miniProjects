@@ -40,16 +40,22 @@
               fill-rule="nonzero"
             />
           </svg>
-        </div>
-
-        <nav class="menu">
-          <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            onclick="openMenu()"
+            class="burguer"
+            width="24"
+            height="18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
               d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
               fill="#FFF"
               fill-rule="evenodd"
             />
           </svg>
+        </div>
+
+        <nav class="menu hide">
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
@@ -60,9 +66,7 @@
       </div>
 
       <div class="arrow-text">
-        <h1 id="title" class="title" data-text="WE ARE CREATIVES">
-          WE ARE CREATIVES
-        </h1>
+        <h1>WE ARE CREATIVES</h1>
         <img src="images/icon-arrow-down.svg" alt="arrow down" />
       </div>
     </header>

@@ -78,7 +78,7 @@ header .navigation .logo {
   cursor: pointer;
 }
 
-.menu svg {
+header .logo .burguer {
   display: none;
 }
 
@@ -384,6 +384,60 @@ footer .social-media {
 }
 
 @media screen and (max-width: 768px) {
+  .hide {
+    display: none;
+  }
+  .open {
+    display: block;
+  }
+  .navigation {
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 99;
+  }
+  .menu {
+    background-color: #fff;
+    width: 100%;
+    padding: 3rem;
+    border-radius: 10px 0 10px 10px;
+    position: relative;
+  }
+  .menu ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .menu ul li a {
+    color: var(--Dark-grayish-blue);
+    font-weight: 700;
+    font-size: 1.125rem;
+  }
+  .menu::after {
+    content: "";
+    position: absolute;
+    top: -19px; /* Posição da ponta */
+    right: 0px; /* Centraliza a ponta */
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #fff #fff transparent;
+  }
+  .menu ul .altBtn {
+    margin-top: 1rem;
+  }
+  .menu ul .altBtn a {
+    background-color: var(--Yellow);
+  }
+  .menu ul .altBtn a:hover {
+    background-color: var(--Yellow);
+  }
+  header .logo .burguer {
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+  }
+
   header {
     text-align: center;
   }
