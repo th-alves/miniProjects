@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Young+Serif:regular);
+
+@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
+
+:root {
+  /* Fonts */
+  --font-contrast: "Young Serif", serif;
+  --font-default: "Outfit", serif;
+
+  /* Colors */
+  /* Primary */
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-default);
+}
+
+.w-700 {
+  font-weight: bold;
+  color: var(--Wenge-Brown);
+}
+
+.subtitle {
+  font-family: var(--font-contrast);
+  color: var(--Nutmeg);
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--Wenge-Brown);
+}
+
+/* Main */
+main {
+  background-color: #fff;
+}
+
+main .container-recipe {
+  padding: 0 2rem 2rem 2rem;
+}
+
+main .image-recipe img {
+  max-width: 100%;
+}
+
+/* Main Recipe Config */
+main .recipe {
+  margin: 2rem auto;
+}
+
+main .recipe .cta-recipe h1 {
+  font-size: 2rem;
+  font-family: var(--font-contrast);
+  font-weight: 400;
+}
+
+main .recipe .cta-recipe p {
+  margin: 1rem 0;
+  line-height: 25px;
+}
+
+/* Recipe Preparation Time */
+main .recipe .preparation-time {
+  background-color: var(--Rose-White);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+main .recipe .preparation-time h3 {
+  color: var(--Dark-Raspberry);
+}
+
+main .recipe .preparation-time ul li {
+  margin: 1rem 0;
+  list-style: none;
+}
+
+main .recipe .preparation-time li::before {
+  content: "•";
+  font-size: 1.2rem;
+  color: var(--Dark-Raspberry);
+  margin: 0 1rem;
+}
+
+/* Recipe Ingredients */
+main .recipe .ingredients {
+  margin: 2rem 0;
+}
+
+main .recipe .ingredients ul {
+  margin: 1rem 0;
+  list-style: none;
+}
+
+main .recipe .ingredients ul li {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+main .recipe .ingredients li::before {
+  content: "•";
+  font-size: 1.2rem;
+  color: var(--Nutmeg);
+  margin: 0 1rem;
+}
+
+/* Instructions */
+.ingredients,
+.instructions {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Aside Instructions */
+aside .instructions ol {
+  list-style: none;
+  counter-reset: item;
+}
+
+aside .instructions ol li {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+aside .instructions ol li p {
+  line-height: 25px;
+}
+
+aside .instructions ol li:before {
+  content: counter(item) ".";
+  counter-increment: item;
+  color: var(--Nutmeg);
+  font-weight: 700;
+  position: absolute;
+  left: -8%;
+}
+
+/* Nutrition */
+aside .nutrition {
+  margin: 2rem 0;
+}
+
+aside .nutrition .table-nutritional {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+aside .nutrition .table-nutritional p {
+  border-bottom: 1px solid #ccc;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+aside .nutrition .table-nutritional p .item-nutri {
+  color: var(--Nutmeg);
+  font-weight: 700;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  aside .instructions ol li:before {
+    left: -3%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: var(--Eggshell);
+  }
+
+  main {
+    width: 600px;
+    margin: 2rem auto;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  main .image-recipe {
+    padding: 2rem;
+  }
+
+  main .image-recipe img {
+    border-radius: 10px;
+  }
+
+  aside .instructions ol li:before {
+    left: -5%;
+  }
+}
