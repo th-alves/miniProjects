@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/CoffeeLove.svg"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/scripts.js" defer></script>
+    <title>CoffeeLove</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navigation">
+        <img class="logo" src="assets/CoffeeLove.svg" alt="CoffeeLove logo" />
+
+        <ul class="menu">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Menu</a>
+          </li>
+          <li>
+            <a href="#">Delivery</a>
+          </li>
+        </ul>
+
+        <div class="right-side">
+          <div class="input">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Cold Brew"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </nav>
+
+      <!-- Hero Header -->
+      <section class="hero">
+        <div class="cta-hero">
+          <h1>
+            The <span>coffee</span> you will fall in <span>love</span> with
+          </h1>
+          <p>
+            Sip, savor, and spread the love - Where every cup is a caffeinated
+            hug at our cozy coffee haven!
+          </p>
+
+          <button class="button_default_1">
+            Order Now
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <div class="img-hero">
+          <img src="assets/coffee-w-heart.png" alt="Coffee Image" />
+        </div>
+      </section>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Tab Links -->
+      <div class="tab">
+        <button
+          id="defaultOpen"
+          class="tablinks"
+          onclick="showCoffees(event, 'hotCoffee')"
+        >
+          <img src="assets/hot-coffee.png" alt="" />
+          Hot Coffee
+        </button>
+        <button class="tablinks" onclick="showCoffees(event, 'coldCoffee')">
+          <img src="assets/cold-coffee.png" alt="" />
+          Cold Coffee
+        </button>
+
+        <button class="tablinks" onclick="showCoffees(event, 'tea')">
+          <img src="assets/tea.png" alt="" />
+          Tea
+        </button>
+      </div>
+
+      <!-- Tab Content -->
+      <div class="content">
+        <i class="fa-solid fa-chevron-left"></i>
+
+        <div id="hotCoffee" class="tabcontent">
+          <h2>
+            Hot
+            <span class="underline-text">Coffee</span>
+          </h2>
+
+          <section class="coffees-card">
+            <div class="card">
+              <div class="coffee-image">
+                <img src="assets/mocha.jpeg" alt="Mocha image" />
+              </div>
+              <div class="about-coffee">
+                <h3>Mocha</h3>
+                <p>
+                  Mocha is a delightful blend of espresso, chocolate syrup or
+                  powder, and milk or cream. The key to a great mocha coffee
+                  lies in the quality of its ingredients.
+                </p>
+              </div>
+              <div class="coffee-price">
+                <h3>$8.60</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="coffee-image">
+                <img src="assets/flat-white.jpeg" alt="Flat White image" />
+              </div>
+              <div class="about-coffee">
+                <h3>Flat White</h3>
+                <p>
+                  A flat white is a double shot espresso-based coffee with
+                  steamed milk finished with a thin layer of textured microfoam
+                  on top—sort of a velvety consistency.
+                </p>
+              </div>
+              <div class="coffee-price">
+                <h3>$8.60</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="coffee-image">
+                <img
+                  src="https://uniquecafes.com.br/wp-content/uploads/2021/08/Destaque-Latte-Macchiato.jpg"
+                  alt="Latte image"
+                />
+              </div>
+              <div class="about-coffee">
+                <h3>Latte</h3>
+                <p>
+                  A latte or caffè latte is a milk coffee that is made up of one
+                  or two shots of espresso, lots of steamed milk and a final,
+                  thin layer of frothed milk on top.
+                </p>
+              </div>
+              <div class="coffee-price">
+                <h3>$11.40</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="coffee-image">
+                <img src="assets/espresso.jpg" alt="Espresso image" />
+              </div>
+              <div class="about-coffee">
+                <h3>Espresso</h3>
+                <p>
+                  Espresso is a concentrated type of coffee drink with Italian
+                  origins. Prepared from the same coffee beans as regular
+                  coffee, it's its preparation that differentiates espresso from
+                  regular coffee.
+                </p>
+              </div>
+              <div class="coffee-price">
+                <h3>$6.40</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div id="coldCoffee" class="tabcontent">
+          <h2>
+            Cold
+            <span class="underline-text">Coffee</span>
+          </h2>
+
+          <section class="coffees-card">
+            <div class="card">
+              <div class="coffee-image">
+                <img src="assets/menu_item_1.jpg" alt="Caramel Frappé" />
+              </div>
+              <div class="about-coffee">
+                <h3>Caramel Frappé</h3>
+                <p>
+                  A delightful and indulgent icy beverage blending rich coffee,
+                  milk, ice, and sweet caramel syrup, creating a smooth and
+                  satisfying treat with a perfect harmony of caffeine and
+                  sweetness.
+                </p>
+              </div>
+              <div class="coffee-price">
+                <h3>$8.60</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="coffee-image">
+                <img src="assets/menu_item_2.jpeg" alt="Macchiato" />
+              </div>
+              <div class="about-coffee">
+                <h3>Macchiato</h3>
+                <p>
+                  An espresso-based coffee characterized by a perfect balance of
+                  bold, concentrated espresso and a touch of velvety steamed
+                  mild, creating a nuanced and flavorful experience.
+                </p>
+              </div>
+              <div class="coffee-price">
+                <h3>$8.60</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="coffee-image">
+                <img src="assets/menu_item_3.jpeg" alt="Affogato" />
+              </div>
+              <div class="about-coffee">
+                <h3>Affogato</h3>
+                <p>
+                  Delectable Italian beverage featuring a scoop of creamy
+                  vanilla gelato or ice cream "drowned" or "affogato" in a shot
+                  of hot espresso, creating a delightful contrast of
+                  temperatures and flavors.
+                </p>
+              </div>
+              <div class="coffee-price">
+                <h3>$11.40</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="coffee-image">
+                <img src="assets/menu_item_4.jpeg" alt="Cold Brew" />
+              </div>
+              <div class="about-coffee">
+                <h3>Cold Brew</h3>
+                <p>
+                  Smooth and concentrated coffee beverage crafted by steeping
+                  coarsely ground coffee beans in cold water for an extended
+                  period, resulting in a refreshing and less acidic brew that
+                  can be enjoyed over ice.
+                </p>
+              </div>
+              <div class="coffee-price">
+                <h3>$6.40</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div id="tea" class="tabcontent">
+          <h2><span class="underline-text">Tea</span></h2>
+
+          <section class="coffees-card">
+            <div class="card">
+              <div class="coffee-image">
+                <img
+                  src="https://i0.wp.com/blog.novidadesaudavel.com.br//wp-content/uploads/2023/04/Design-sem-nome-2023-04-17T135443.152.jpg?resize=640%2C336&ssl=1"
+                  alt="Chá Capim-Santo"
+                />
+              </div>
+              <div class="about-coffee">
+                <h3>
+                  Capim-Santo <br />
+                  (Lemongrass)
+                </h3>
+                <p>
+                  Lemongrass tea is a herbal infusion made from the lemongrass
+                  plant. It has a diuretic effect and acts as a detoxifying
+                  treatment for cleansing the liver, pancreas, kidneys, bladder,
+                  and aids in toning the digestive tract.
+                </p>
+              </div>
+              <div class="coffee-price">
+                <h3>$8.60</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="coffee-image">
+                <img
+                  src="https://conteudo.imguol.com.br/c/entretenimento/b7/2020/03/30/cha-de-camomila-1585591138776_v2_4x3.jpg"
+                  alt="Camomila"
+                />
+              </div>
+              <div class="about-coffee">
+                <h3>Camomila(Chamomile)</h3>
+                <p>
+                  Chamomile tea is a herbal infusion made from chamomile
+                  flowers. It's enjoyed for its sweet, floral flavor as well as
+                  its calming properties.
+                </p>
+              </div>
+              <div class="coffee-price">
+                <h3>$8.60</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="coffee-image">
+                <img
+                  src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3105363:1625288000/ch%C3%A1-de-erva-cidreira.jpeg?f=16x9&$p$f=44d222a"
+                  alt="Erva-Cidreira"
+                />
+              </div>
+              <div class="about-coffee">
+                <h3>
+                  Erva-Cidreira <br />
+                  (Lemon Balm)
+                </h3>
+                <p>
+                  Lemon Balm tea is an herbal infusion made from the lemon balm
+                  plant. It's known for its calming and soothing properties3.
+                </p>
+              </div>
+              <div class="coffee-price">
+                <h3>$11.40</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="coffee-image">
+                <img src="assets/hibisco.jpg" alt="Hibisco image" />
+              </div>
+              <div class="about-coffee">
+                <h3>Hibisco</h3>
+                <p>
+                  Hibiscus tea is a caffeine-free herbal tea made from hibiscus
+                  flowers. It's enjoyed for its floral note, a bit of tang, and
+                  an intensely deep pink hue5.
+                </p>
+              </div>
+              <div class="coffee-price">
+                <h3>$6.40</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div id="dessert" class="tabcontent">
+          <h2>Des<span class="underline-text">sert</span></h2>
+
+          <section class="coffees-card">
+            <div class="card">
+              <div class="coffee-image">
+                <img src="assets/menu_item_1.jpg" alt="Caramel Frappé" />
+              </div>
+              <div class="about-coffee">
+                <h3>Caramel Frappé</h3>
+                <p>
+                  A delightful and indulgent icy beverage blending rich coffee,
+                  milk, ice, and sweet caramel syrup, creating a smooth and
+                  satisfying treat with a perfect harmony of caffeine and
+                  sweetness.
+                </p>
+              </div>
+              <div class="coffee-price">
+                <h3>$8.60</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="coffee-image">
+                <img src="assets/menu_item_2.jpeg" alt="Macchiato" />
+              </div>
+              <div class="about-coffee">
+                <h3>Macchiato</h3>
+                <p>
+                  An espresso-based coffee characterized by a perfect balance of
+                  bold, concentrated espresso and a touch of velvety steamed
+                  mild, creating a nuanced and flavorful experience.
+                </p>
+              </div>
+              <div class="coffee-price">
+                <h3>$8.60</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="coffee-image">
+                <img src="assets/menu_item_3.jpeg" alt="Affogato" />
+              </div>
+              <div class="about-coffee">
+                <h3>Affogato</h3>
+                <p>
+                  Delectable Italian beverage featuring a scoop of creamy
+                  vanilla gelato or ice cream "drowned" or "affogato" in a shot
+                  of hot espresso, creating a delightful contrast of
+                  temperatures and flavors.
+                </p>
+              </div>
+              <div class="coffee-price">
+                <h3>$11.40</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="coffee-image">
+                <img src="assets/menu_item_4.jpeg" alt="Cold Brew" />
+              </div>
+              <div class="about-coffee">
+                <h3>Cold Brew</h3>
+                <p>
+                  Smooth and concentrated coffee beverage crafted by steeping
+                  coarsely ground coffee beans in cold water for an extended
+                  period, resulting in a refreshing and less acidic brew that
+                  can be enjoyed over ice.
+                </p>
+              </div>
+              <div class="coffee-price">
+                <h3>$6.40</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+
+      <!-- Divisor -->
+      <div class="divisor">
+        <img src="assets/star-icon.png" alt="Star icon" />
+
+        <div class="learn-more">
+          <h2>Sign up to our coffee reward program!</h2>
+          <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Special Menu -->
+      <section class="special-menu">
+        <h2>Special menu <span class="underline-text">for you</span></h2>
+
+        <div class="menu">
+          <div class="card">
+            <div class="coffee-image">
+              <img src="assets/menu_item_2.jpeg" alt="Macchiato image" />
+            </div>
+
+            <div class="special-menu-content">
+              <h3>Macchiato</h3>
+              <div class="coffee-price">
+                <h3>$8.60</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="coffee-image">
+              <img src="assets/menu_item_1.jpg" alt="Caramel Frappé image" />
+            </div>
+
+            <div class="special-menu-content">
+              <h3>Caramel Frappé</h3>
+              <div class="coffee-price">
+                <h3>$9.20</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="coffee-image">
+              <img src="assets/menu_item_5.png" alt="Macha Latte image" />
+            </div>
+
+            <div class="special-menu-content">
+              <h3>Macha Latte</h3>
+              <div class="coffee-price">
+                <h3>$11.40</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="coffee-image">
+              <img src="assets/menu_item_6.png" alt="Hot Chocolate image" />
+            </div>
+
+            <div class="special-menu-content">
+              <h3>Hot Chocolate</h3>
+              <div class="coffee-price">
+                <h3>$6.40</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="coffee-image">
+              <img src="assets/menu_item_7.png" alt="Fruit Tea image" />
+            </div>
+
+            <div class="special-menu-content">
+              <h3>Fruit Tea</h3>
+              <div class="coffee-price">
+                <h3>$8.60</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="coffee-image">
+              <img src="assets/menu_item_8.png" alt="Cappuccino image" />
+            </div>
+
+            <div class="special-menu-content">
+              <h3>Cappuccino</h3>
+              <div class="coffee-price">
+                <h3>$9.20</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="coffee-image">
+              <img src="assets/menu_item_3.jpeg" alt="Affogato image" />
+            </div>
+
+            <div class="special-menu-content">
+              <h3>Affogato</h3>
+              <div class="coffee-price">
+                <h3>$11.40</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="coffee-image">
+              <img src="assets/menu_item_4.jpeg" alt="Cold Brew image" />
+            </div>
+
+            <div class="special-menu-content">
+              <h3>Cold Brew</h3>
+              <div class="coffee-price">
+                <h3>$6.40</h3>
+                <button class="btn_default_2">Order Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Aside -->
+    <aside>
+      <div class="image-aside">
+        <img src="assets/serving-coffee.jpg" alt="serving coffee image" />
+      </div>
+
+      <div class="cta-aside">
+        <h3>About <span class="underline-text">us</span></h3>
+        <p class="subtitle">Sip into Perfection</p>
+        <p>
+          Our Coffee World, where passion meets precision in every brew,
+          bringing you a symphony of flavors and a journey through the rich,
+          aromatic realms of coffee craftsmaship.
+        </p>
+
+        <button class="button_default_1">Start Your Order</button>
+      </div>
+    </aside>
+
+    <footer>
+      <div class="top-footer">
+        <div class="logo">
+          <img src="assets/CoffeeLove.svg" alt="Logo Image" />
+          CoffeeLove
+        </div>
+
+        <div class="social-media">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/th_ntc" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="links-newsletter">
+        <div class="links">
+          <nav>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">MENU</a></li>
+              <li><a href="#">DELIVERY</a></li>
+              <li><a href="#">LOCATIONS</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="input">
+          <label for="newsletter">Newsletter</label>
+          <br />
+          <input
+            type="email"
+            name="newsletter"
+            id="newsletter"
+            placeholder="Your Email"
+          />
+          <button type="submit">Subscribe</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
