@@ -14,6 +14,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/mq-telas-pequenas.css" />
+
     <script src="assets/js/scripts.js" defer></script>
     <title>CoffeeLove</title>
   </head>
@@ -23,6 +25,9 @@
       <nav class="navigation">
         <img class="logo" src="assets/CoffeeLove.svg" alt="CoffeeLove logo" />
 
+        <button id="openMenu" class="button-menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
         <ul class="menu">
           <li>
             <a href="#">Home</a>
@@ -33,6 +38,10 @@
           <li>
             <a href="#">Delivery</a>
           </li>
+
+          <button id="closeMenu" class="button-menu close-menu">
+            <i class="fa-solid fa-x"></i>
+          </button>
         </ul>
 
         <div class="right-side">
@@ -574,6 +583,7 @@
         </div>
       </section>
     </main>
+
     <!-- Aside -->
     <aside>
       <div class="image-aside">

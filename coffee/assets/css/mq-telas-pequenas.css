@@ -1,0 +1,123 @@
+@media screen and (max-width: 768px) {
+  /* Menu Buttons */
+  header .navigation .menu .close-menu {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    color: #fff;
+  }
+
+  header .navigation .button-menu {
+    background-color: transparent;
+    border: none;
+    font-size: 3.5rem;
+  }
+
+  /* Navigation */
+  header .navigation {
+    justify-content: space-between;
+    position: relative;
+    padding: 2rem;
+  }
+
+  header .navigation .menu {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: var(--Brown-Tumbleweed);
+    width: calc(250px - 2rem);
+    height: 100vh;
+    padding: 8rem 2rem;
+
+    transform: translate(100%);
+    transition: transform 0.7s ease;
+  }
+
+  header .navigation .menu a {
+    color: var(--Macaroni-Cheese);
+    font-weight: 700;
+  }
+
+  /* Right Side */
+  header .right-side {
+    justify-content: center;
+    position: absolute;
+    top: 260px;
+    right: 0px;
+
+    background-color: var(--Brown-Tumbleweed);
+    width: calc(250px - 2rem);
+    padding: 2rem;
+
+    transform: translate(100%);
+    transition: transform 0.7s ease;
+  }
+
+  header .right-side .input,
+  header .right-side .input input {
+    width: 10%;
+  }
+
+  /* Header - Hero */
+  header .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  header .hero .cta-hero {
+    color: var(--Brown-Tumbleweed);
+    width: 90%;
+  }
+
+  header .hero .cta-hero button {
+    display: block;
+    margin: auto;
+  }
+
+  header .hero .img-hero {
+    text-align: center;
+  }
+
+  header .hero .cta-hero h1 span {
+    color: var(--Sepia-Skin);
+  }
+
+  /* Main Tab */
+  main .tab {
+    margin-top: 8rem;
+    align-items: baseline;
+  }
+
+  .fa-chevron-left,
+  .fa-chevron-right {
+    display: none;
+  }
+
+  main .content .tabcontent {
+    width: 100%;
+    margin: 4rem 0;
+    padding: 0;
+    overflow-x: auto;
+  }
+
+  main .content .tabcontent .coffees-card {
+    gap: 2rem;
+  }
+
+  .card {
+    overflow: initial;
+    height: 700px;
+  }
+
+  .card:hover {
+    transform: scale(1);
+    background-color: var(--Macaroni-Cheese);
+    color: var(--Roman-Coffee);
+  }
+
+  .card:hover img {
+    transform: scale(1);
+  }
+}

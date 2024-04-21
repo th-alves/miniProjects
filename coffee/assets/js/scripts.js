@@ -13,3 +13,19 @@ function showCoffees(evt, coffeeName) {
   document.getElementById(coffeeName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+// Sidebar
+const right_side = document.querySelector(".right-side");
+const menu = document.querySelector(".menu");
+const open_menu = document.querySelector("#openMenu");
+const close_menu = document.querySelector("#closeMenu");
+
+
+open_menu.addEventListener("click", () => {
+  menu.style.transform = "translate(0)";
+  right_side.style.transform = "translate(0)";
+});
+close_menu.addEventListener("click", () => {
+  menu.style.transform = "translate(100%)";
+  right_side.style.transform = "translate(100%)";
+});
