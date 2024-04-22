@@ -56,6 +56,7 @@ address_input.addEventListener("input", (e) => {
 });
 
 checkout_btn.addEventListener("click", () => {
+  let total = 0;
   const is_open = checkRestaurantOpen();
   if (!is_open) {
     Toastify({
@@ -70,11 +71,18 @@ checkout_btn.addEventListener("click", () => {
       },
     }).showToast();
     return;
-  } else{
+  }
+
+  if (cart.length === 0) return;
+  if (address_input.value === "") {
+    address_warn.classList.remove("hidden");
+    address_input.classList.add("border-red-500");
+    return;
+  } else {
     Toastify({
       text: "Pedido realizado com sucesso.",
       duration: 3000,
-      close: true,
+      close: false,
       gravity: "top", // `top` or `bottom`
       position: "right", // `left`, `center` or `right`
       stopOnFocus: true, // Prevents dismissing of toast on hover
@@ -84,18 +92,12 @@ checkout_btn.addEventListener("click", () => {
     }).showToast();
   }
 
-  if (cart.length === 0) return;
-  if (address_input.value === "") {
-    address_warn.classList.remove("hidden");
-    address_input.classList.add("border-red-500");
-    return;
-  }
-
   const cart_items = cart
     .map((item) => {
       return ` ${item.name} Quantidade: (${
         item.quantity
-      }) Preço: R$${item.price.toFixed(2)}`;
+      }) Preço: R$${item.price.toFixed(2)} Total: R$${(total +=
+        item.price * item.quantity)}`;
     })
     .join();
 
@@ -183,7 +185,7 @@ function removeItemCart(name) {
 function checkRestaurantOpen() {
   const data = new Date();
   const hora = data.getHours();
-  return hora >= 15 && hora < 22;
+  return hora >= 15 && hora < 23;
 }
 
 const span_item = document.getElementById("date-span");
