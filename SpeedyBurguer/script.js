@@ -185,7 +185,7 @@ function removeItemCart(name) {
 function checkRestaurantOpen() {
   const data = new Date();
   const hora = data.getHours();
-  return hora >= 15 && hora < 23;
+  return hora >= 11 && hora < 22;
 }
 
 const span_item = document.getElementById("date-span");

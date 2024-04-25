@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <title>Form validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="header">
+        <h2>Nova Conta</h2>
+      </section>
+
+      <form id="form" class="form" action="#">
+        <div class="form-content">
+          <label for="username">Nome do usuário</label>
+          <input type="text" id="username" placeholder="Digite seu nome" />
+          <a href="#">Aqui vai a mensagem de erro...</a>
+        </div>
+
+        <div class="form-content">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Digite seu email" />
+          <a href="#">Aqui vai a mensagem de erro...</a>
+        </div>
+
+        <div class="form-content">
+          <label for="senha">senha</label>
+          <input type="password" id="password" placeholder="Digite sua senha" />
+          <a href="#">Aqui vai a mensagem de erro...</a>
+        </div>
+
+        <div class="form-content">
+          <label for="password-confirmation">Confirme sua senha</label>
+          <input
+            type="password"
+            id="password-confirmation"
+            placeholder="Digite sua senha novamente"
+          />
+          <a href="#">Aqui vai a mensagem de erro...</a>
+        </div>
+
+        <button type="submit">Enviar!</button>
+      </form>
+    </div>
+  </body>
+</html>
