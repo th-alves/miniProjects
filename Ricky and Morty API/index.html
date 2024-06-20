@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <div class="top-form">
+        <h2>Busque por um personagem de Ricky and Morty</h2>
+        <div class="input-id">
+          <label for="characterId">ID da personagem:</label>
+          <input
+            type="number"
+            name=""
+            id="characterId"
+            placeholder="Entre 1 e 826"
+          />
+        </div>
+        <button type="submit" id="btn-go">Procurar</button>
+        <button type="reset" id="btn-reset">Limpar</button>
+      </div>
+
+      <hr />
+
+      <div class="bottom-form">
+        <h2>Informações adicionais:</h2>
+        <div class="checks">
+          <div>
+            <input type="checkbox" name="name" id="name" />
+            <label for="name">Nome</label>
+          </div>
+          <div>
+            <input type="checkbox" name="status" id="status" />
+            <label for="status">Status</label>
+          </div>
+          <div>
+            <input type="checkbox" name="species" id="species" />
+            <label for="species">Espécie</label>
+          </div>
+          <div>
+            <input type="checkbox" name="gender" id="gender" />
+            <label for="gender">Gênero</label>
+          </div>
+          <div>
+            <input type="checkbox" name="origin" id="origin" />
+            <label for="origin">Planeta de Origem</label>
+          </div>
+          <div>
+            <input type="checkbox" name="episode" id="episode" />
+            <label for="episode">Episódios</label>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+    </form>
+
+    <div id="result-style">
+      <img src="" alt="" id="img" />
+      <div id="content"></div>
+    </div>
+  </body>
+</html>
