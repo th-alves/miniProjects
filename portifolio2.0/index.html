@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thiago Souza - Portfólio</title>
+    <!-- Links Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <!-- Sidebar -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Thiago Souza"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Thiago Souza">Thiago Souza</h1>
+
+            <p class="title">Desenvolvedor web</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Mostrar Contatos</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a
+                  href="mailto:thiagosouza.contato02@gmail.com"
+                  class="contact-link"
+                  >thiagosouza.contato02@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Celular</p>
+
+                <a href="tel:+5511963065438" class="contact-link"
+                  >(11) 96306-5438</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">LinkedIn</p>
+
+                <a
+                  href="https://www.linkedin.com/in/thiago-alves-265823236/"
+                  target="_blank"
+                  >Acessar LinkedIn</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Local</p>
+
+                <address>SP - São Paulo, Brasilândia</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/th_ntc"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Navbar -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>Início</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Currículo</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfólio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contato</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Sobre mim -->
+        <article class="about active" data-page="início">
+          <header>
+            <h2 class="h2 article-title">Sobre mim</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Sempre buscando aprender e evoluir, estou comprometido em seguir
+              as melhores práticas da indústria e acompanhar as tendências mais
+              recentes. Minha paixão pela programação se traduz em interfaces de
+              usuário intuitivas e visualmente atraentes. Estou pronto para
+              colaborar em projetos desafiadores e contribuir para o
+              desenvolvimento de soluções inovadoras.
+            </p>
+          </section>
+
+          <!-- Serviços -->
+          <section class="service">
+            <h3 class="h3 service-title">O que eu faço</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Desenvolvimento Web</h4>
+
+                  <p class="service-item-text">
+                    Desenvolvimento de sites de alta qualidade em nível
+                    profissional.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Depoimentos -->
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Depoimentos</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Kauai Santana"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Kauai Santana
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Contratar o Thiago para desenvolver o nosso site foi a
+                      melhor decisão que tomamos! O site ficou incrível, com um
+                      design moderno e funcionalidades que facilitam a navegação
+                      dos nossos clientes. Além disso, ele foi extremamente
+                      profissional, entregando o projeto dentro do prazo e
+                      sempre disponível para tirar nossas dúvidas. Recomendo de
+                      olhos fechados!
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-4.png"
+                      alt="Kaique Nascimento"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Kaique Nascimento
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      O trabalho do Thiago foi excepcional! Desde o primeiro
+                      contato, percebemos o comprometimento e o profissionalismo
+                      dele na área. Ele entendeu perfeitamente nossas
+                      necessidades e trouxe soluções criativas. Estamos muito
+                      satisfeitos com o resultado!
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Modal dos Depoimentos -->
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Kauai Santana"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Kauai Santana</h4>
+
+                <time datetime="2021-06-14">14 Julho, 2023</time>
+
+                <div data-modal-text>
+                  <p>
+                    Contratar o Thiago para desenvolver o nosso site foi a
+                    melhor decisão que tomamos! O site ficou incrível, com um
+                    design moderno e funcionalidades que facilitam a navegação
+                    dos nossos clientes. Além disso, ele foi extremamente
+                    profissional, entregando o projeto dentro do prazo e sempre
+                    disponível para tirar nossas dúvidas. Recomendo de olhos
+                    fechados!
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <!-- Currículo -->
+        <article class="resume" data-page="currículo">
+          <header>
+            <h2 class="h2 article-title">Currículo</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Educação</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Graduação Interrompida - Uninove
+                </h4>
+
+                <span>2020</span>
+
+                <p class="timeline-text">
+                  Tecnologia em Análise e Desenvolvimento de Sistemas.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Ensino Médio - E.E João Solimeo
+                </h4>
+
+                <span>2015 — 2018</span>
+
+                <p class="timeline-text">Completo</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Expêriencias</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Concentrix - Call Center Receptivo Auxiliar/Operacional
+                </h4>
+
+                <span>2021 - 2022</span>
+
+                <p class="timeline-text">
+                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
+                  delenit atque corrupti, quos dolores et quas molestias
+                  exceptur.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Scope - Manutenção e Instalações Auxiliar/Operacional
+                </h4>
+
+                <span>Julho de 2022 - Setembro de 2022</span>
+
+                <p class="timeline-text">
+                  Ajudava na montagem de equipamentos, e auxiliava os técnicos
+                  na instalação e verificação do funcionamento do equipamento.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">Habilidades</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <i class="devicon-html5-plain colored"></i>
+                  <h5 class="h5">HTML 5</h5>
+                  <p>
+                    Proficiente em HTML, com habilidades para estruturar páginas
+                    web de maneira semântica e acessível.
+                  </p>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <i class="devicon-css3-plain colored"></i>
+                  <h5 class="h5">CSS 3</h5>
+                  <p>
+                    Experiente em CSS, capaz de estilizar páginas web para criar
+                    designs responsivos e atraentes.
+                  </p>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <i class="devicon-javascript-plain colored"></i>
+                  <h5 class="h5">JavaScript</h5>
+                  <p>
+                    Experiência em JavaScript para criar interações dinâmicas em
+                    páginas web.
+                  </p>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <i class="devicon-react-original colored"></i>
+                  <h5 class="h5">ReactJS</h5>
+                  <p>
+                    Proficiência em React para desenvolvimento de interfaces de
+                    usuário modernas e reativas.
+                  </p>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <i class="bx bxl-figma"></i>
+                  <h5 class="h5">Figma - UI & UX Design</h5>
+                  <p>
+                    Habilidade em Figma para criação de designs de interface do
+                    usuário.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Portfolio -->
+        <article class="portfolio" data-page="portfólio">
+          <header>
+            <h2 class="h2 article-title">Portfólio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>Todos</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Destaques</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Outros projetos</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Selecione uma categoria
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>Todos</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Destaques</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Outros projetos</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="outros projetos"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Finance</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="destaques"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Orizon</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="outros projetos"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Fundo</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="destaques"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-5.png"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">DSM.</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="outros projetos"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-6.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">MetaSpark</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="destaques"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-7.png"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Summary</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="outros projetos"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-9.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Arrival</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Contato -->
+        <article class="contact" data-page="contato">
+          <header>
+            <h2 class="h2 article-title">Contato</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14639.152430715314!2d-46.699885596934216!3d-23.468106511821038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef9eb4bdad12f%3A0x5c956e0d5cb9d82f!2sBrasil%C3%A2ndia%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1719794263468!5m2!1spt-BR!2sbr"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Entre em contato &#128516;</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Nome completo"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="exemplo@gmail.com"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Sua mensagem"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Enviar mensagem</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
