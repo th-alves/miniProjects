@@ -284,3 +284,65 @@ main {
     }
   }
 }
+
+@media screen and (width <= 768px){
+  header {
+  background-attachment: scroll;
+    & nav{
+      & .logo {
+        margin: auto;
+        & h1{
+          display: none;
+        }
+        & img {
+          width: 70px;
+        }
+      }
+      
+      & .menu {
+        display: none;
+      }
+    }
+
+    & .CTA-Header {
+      & .CTA {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  main {
+    & .about-us {
+      flex-direction: column;
+      & .img-about-us img {
+        width: 100%;
+      }
+      & .CTA-About-Us {
+        width: 100%;
+        padding: 5rem 0;
+      }
+    }
+
+    & .join-us {
+      & .CTA-Join-Us {
+        width: 90%;
+        top: 150px;
+        left: 5%;
+
+        font-size: 2.5rem;
+      }
+    }
+
+    & aside {
+      & .cards {
+        overflow-x: scroll;
+      }
+    }
+  }
+
+  .contato {
+    & form {
+      width: 90%;
+    }
+  }
+} 
