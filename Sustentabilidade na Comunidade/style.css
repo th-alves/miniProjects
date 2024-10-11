@@ -285,6 +285,15 @@ main {
   }
 }
 
+footer {
+  text-align: center;
+  margin: 2rem 0;
+
+  & span {
+    font-style: italic;
+  }
+}
+
 @media screen and (width <= 768px){
   header {
   background-attachment: scroll;
